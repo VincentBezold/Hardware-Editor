@@ -26,15 +26,11 @@ namespace Hardware_Editor
         }
     
 
-            public int PriceInput()
-            {
-                int PriceInput = Int32.Parse(Price.Text);
-                return PriceInput;
-            }
-
-
-
-
+        public int PriceInput()
+        {
+            int PriceInput = Int32.Parse(Price.Text);
+            return PriceInput;
+        }
 
 
 
@@ -50,27 +46,22 @@ namespace Hardware_Editor
             ProductCalc.RamCalculation(Price);
 
             Solution.Content = PriceGC + " " + NameGC + "\n" + PriceP + " " + NameP + "\n" + Ram.PriceReturned + " Gb";
-
-
-
         }
 
 
         private void Office_Click(object sender, EventArgs e)
-            {
+        {
 
-            }
+        }
 
-            private void Allrounder_Click(object sender, EventArgs e)
-            {
+        private void Allrounder_Click(object sender, EventArgs e)
+        {
 
-            }
+        }
 
-            private void Price_TextChanged(object sender, EventArgs e)
-            {
+        private void Price_TextChanged(object sender, EventArgs e)
+        {
 
-            }
-
-        
+        }
     }
 }
