@@ -1,0 +1,21 @@
+﻿<Window x:Class="Hardware_Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hardware_Editor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170*"/>
+            <ColumnDefinition Width="347*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Office" Content="Office" HorizontalAlignment="Left" Margin="53,71,0,0" VerticalAlignment="Top" Width="75" Click="Office_Click"/>
+        <Button x:Name="Allrounder" Content="Allrounder" HorizontalAlignment="Left" Margin="53,113,0,0" VerticalAlignment="Top" Width="75" Click="Allrounder_Click"/>
+        <Button x:Name="Gaming" Content="Gaming" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="53,28,0,0" Click="Gaming_Click"/>
+        <TextBox x:Name="Price" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="116,43,0,0" TextChanged="Price_TextChanged"/>
+        <Label x:Name="Solution" Content="Your Config" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="125,181,0,0" Height="99" Width="139"/>
+
+    </Grid>
+</Window>
